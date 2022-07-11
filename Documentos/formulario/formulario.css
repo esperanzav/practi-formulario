@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;1,500&family=Open+Sans:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.contenedor{/*la caja*/
+    margin: auto;/*centra todo*/
+    display: flex;
+    flex-direction: column;/*que todo lo q este en la caja lo ponga en colummna como y principal*/
+    align-items: center;/*todo lo centre*/
+    justify-content: center;
+    gap: 25px;
+    width: 450;
+}
+
+.hache{
+    font-size: 30px;
+    margin: 10px;
+    font-style: italic;
+}
+.botones-1{
+/*align-self: flex-start;/*para no afectar el flex de la caja contnedor, con esta linea mueve las cajas*/
+display: flex;
+gap: 20px;
+margin: 5px;
+}
+.buton-google{
+    background: #1a73eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;/*con esto me muestra la cajita blanca donde ira el picture*/
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+.buton-google:hover{/*pseudoclase : hover*/
+    opacity:0.8 ;
+    
+}
+.buton-google picture{
+    width: 30px;
+    height: 30px;
+    background-color:#fff;
+    border-radius: 2px;
+    display: flex;/*centra el logo*/
+    align-items: center;/*centra el logo*/
+    justify-content: center;/*centra el logo*/
+}
+.imagen{
+width: 20px;
+
+}
+.buton-google span{
+    color: #fff;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.buton-twiter{
+    background-color: darkorchid;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+.buton-twiter:hover{
+    opacity: 0.8;
+    color: #fff;
+}
+
+.buton-twiter picture{
+    width: 30px;
+    height: 30px;
+    background-color:#fff;
+    border-radius: 2px;
+    display: flex;/*centra el logo*/
+    align-items: center;/*centra el logo*/
+    justify-content: center;/*centra el logo*/
+}
+
+.buton-twiter picture img{
+    width: 30px;
+    height: 30px;
+}
+.buton-twiter span{
+    color: #fff;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.separador{
+    display: flex;/*para q ponga todo en una misma linea*/
+    width: 100%;
+    gap: 15px;/*separa un poco*/
+}
+
+.separador hr{
+    flex-grow: 1;/*expander la linea creo*/
+    border: none;
+    border-top: 1px solid mediumpurple;/*bodr arriba*/
+    
+}
+.separador span{
+    color: mediumpurple;
+}
+
+.formu{
+display: flex;/*pone en la misma linea*/
+flex-direction: column;
+align-items: center;
+justify-content: stretch;
+gap: 20px;/*separa un poco*/
+}
+
+.seccion-input{
+    display: flex;/*para que lo ponga en la misma linea*/
+    gap: 20px;/*separa un poco el name y el username*/
+    width: 100%;
+    
+}
+label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;/*ponen en colummna los*/
+    gap: 5px;/*separa un poco*/
+}
+label span{
+font-weight: 700;
+
+}
+
+label input{
+    width: 80%;
+    background-color:#ffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;/*quita la linea*/
+    font-size: 14pt;
+    cursor: pointer;
+    transition: background-color 0.1s, border 0.2s, box-shadow 0.2s;
+}
+
+label input:hover{
+    background:  #fff;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+    
+    
+}
+
+label input:focus{
+    background: 161717;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+    
+}
+
+.check{
+    display: flex;/*lo pone en linea*/
+    flex-direction: row;/*sube el acepta las condiciones*/
+}
+.check-1{
+    width: 20px;
+}
+.check span{
+    font-weight: 400;
+}
+
+.enviar{
+    background-color: #ea4c89;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+.enviar:hover{
+   opacity: 0.6;
+}
+
+
+   
+  
+    
+    
